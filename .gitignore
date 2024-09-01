@@ -1,0 +1,5 @@
+.venv
+0_Scans/*
+1_OCR/*
+2_Split/*
+3_AI/*
