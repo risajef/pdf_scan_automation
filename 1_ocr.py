@@ -47,7 +47,8 @@ def process_all_next_documents():
         # Generate the output filename
         base_name = os.path.splitext(os.path.basename(input_file))[0]
         output_path = os.path.join(current_dir, "1_OCR", f"OCR_{base_name}.pdf")
-        if (os.path.exists(output_path)):
+        output_path_2 = os.path.join(current_dir, "1_OCR", f"SPLITTED_OCR_{base_name}.pdf")
+        if (os.path.exists(output_path) or os.path.exists(output_path_2)):
             continue
 
         print(f"Processing: {input_file}")
